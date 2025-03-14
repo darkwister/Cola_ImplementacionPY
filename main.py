@@ -3,16 +3,13 @@ import os
 def main():
     # Instaciamos la clase de lista enlazada
     llista = lista_enlazada()
-    clear = lambda: os.system('cls')
     # Funcion para mostrar el menu
     def menu():
-        clear()
         print("1. Agregar")
         print("2. Eliminar")
         print("3. Mostrar")
         print("4. Salir")
         opcion = input("Seleccione una opcion: ")
-        clear()
         return opcion
     
     while True:
