@@ -2,7 +2,7 @@ from clases.lista_enlazada import lista_enlazada
 import os
 def main():
     # Instaciamos la clase de lista enlazada
-    llista = lista_enlazada()
+    llist = lista_enlazada()
     # Funcion para mostrar el menu
     def menu():
         print("1. Agregar")
@@ -18,19 +18,19 @@ def main():
         if opcion == "1":
             try:
                 dato = input("Ingrese el dato a agregar: ")
-                llista.append(dato)
+                llist.append(dato)
             except Exception as e:
                 print(e)
         #Funcion para eliminar los datos
         elif opcion == "2":
             try:
                 dato = input("Ingrese el dato a eliminar: ")
-                llista.delete(dato)
+                llist.delete(dato)
             except Exception as e:
                 print(e)
         #Funcion para mostrar los datos
         elif opcion == "3":
-            llista.display()
+            llist.display()
         #Cierra la aplicacion
         elif opcion == "4":
             break
